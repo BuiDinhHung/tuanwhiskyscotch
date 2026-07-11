@@ -74,7 +74,7 @@ function initProductPage() {
           : 'Hàng sưu tầm hiếm — giá thay đổi theo thị trường. Liên hệ để nhận báo giá mới nhất &amp; kiểm tra tình trạng hàng.') + '</div>' +
         '<div class="detail-actions">' +
           '<button class="btn btn-gold btn-block" onclick="openBuyModal(\'' + p.slug + '\')">Mua ngay — Liên hệ đặt hàng</button>' +
-          '<a class="btn btn-ghost btn-block" href="tel:' + SITE.hotline + '">☎ Gọi Hotline ' + SITE.hotline + '</a>' +
+          '<a class="btn btn-ghost btn-block" href="tel:' + SITE.hotlineIntl + '">☎ Gọi Hotline ' + SITE.hotline + '</a>' +
         '</div>' +
         '<div class="detail-note">✓ Cam kết chính hãng 100% · ✓ Giao toàn quốc, đóng gói chống sốc · ✓ Hỗ trợ gói quà biếu cao cấp miễn phí</div>' +
       '</div>' +

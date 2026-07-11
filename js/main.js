@@ -124,7 +124,7 @@ function buildHeader(active) {
   return '' +
   '<div class="topbar"><div class="container topbar-inner">' +
     '<div class="topbar-contact">' +
-      '<a href="tel:' + SITE.hotline + '">☎ Hotline: ' + SITE.hotline + '</a>' +
+      '<a href="tel:' + SITE.hotlineIntl + '">☎ Hotline: ' + SITE.hotline + '</a>' +
       '<span class="sep hide-mobile">|</span>' +
       '<a class="hide-mobile" href="mailto:' + SITE.email + '">✉ ' + SITE.email + '</a>' +
     '</div>' +
@@ -143,7 +143,7 @@ function buildHeader(active) {
       '</form>' +
     '</div>' +
     '<div class="header-cta">' +
-      '<div class="header-hotline"><span>Đặt rượu nhanh</span><a href="tel:' + SITE.hotline + '">' + SITE.hotline + '</a></div>' +
+      '<div class="header-hotline"><span>Đặt rượu nhanh</span><a href="tel:' + SITE.hotlineIntl + '">' + SITE.hotline + '</a></div>' +
     '</div>' +
   '</div>' +
   '<nav class="main-nav" id="mainNav"><div class="container"><ul class="nav-list">' +
@@ -176,14 +176,14 @@ function buildFooter() {
       '<div><h4>Danh mục</h4><ul>' + brandLinks + '</ul></div>' +
       '<div><h4>Hỗ trợ</h4><ul>' +
         '<li><a href="products.html">Tất cả sản phẩm</a></li>' +
-        '<li><a href="tel:' + SITE.hotline + '">Đặt hàng qua Hotline</a></li>' +
+        '<li><a href="tel:' + SITE.hotlineIntl + '">Đặt hàng qua Hotline</a></li>' +
         '<li><a href="' + SITE.zaloUrl + '" target="_blank" rel="noopener">Chat Zalo</a></li>' +
         '<li><a href="' + SITE.facebookUrl + '" target="_blank" rel="noopener">Facebook: ' + SITE.facebookName + '</a></li>' +
       '</ul></div>' +
       '<div id="lien-he"><h4>Liên hệ</h4><ul class="footer-contact">' +
         '<li><span class="k">Website</span> <span>' + SITE.domain + '</span></li>' +
         '<li><span class="k">Email</span> <a href="mailto:' + SITE.email + '">' + SITE.email + '</a></li>' +
-        '<li><span class="k">Hotline</span> <a href="tel:' + SITE.hotline + '">' + SITE.hotline + '</a></li>' +
+        '<li><span class="k">Hotline</span> <a href="tel:' + SITE.hotlineIntl + '">' + SITE.hotline + '</a></li>' +
         '<li><span class="k">Facebook</span> <a href="' + SITE.facebookUrl + '" target="_blank" rel="noopener">' + SITE.facebookName + '</a></li>' +
       '</ul></div>' +
     '</div>' +
@@ -194,7 +194,7 @@ function buildFooter() {
   '</div>' +
   '<div class="float-contact">' +
     '<a class="float-zalo" href="' + SITE.zaloUrl + '" target="_blank" rel="noopener" aria-label="Chat Zalo">Zalo</a>' +
-    '<a class="float-phone" href="tel:' + SITE.hotline + '" aria-label="Gọi hotline">☎</a>' +
+    '<a class="float-phone" href="tel:' + SITE.hotlineIntl + '" aria-label="Gọi hotline">☎</a>' +
   '</div>';
 }
 
@@ -277,7 +277,7 @@ function buildBuyModal() {
           '<span class="icon icon-zalo">Z</span>' +
           '<span><strong>Zalo: ' + SITE.hotline + '</strong><span>Chat Zalo tư vấn &amp; báo giá</span></span>' +
         '</a>' +
-        '<a class="contact-link" href="tel:' + SITE.hotline + '">' +
+        '<a class="contact-link" href="tel:' + SITE.hotlineIntl + '">' +
           '<span class="icon icon-phone">☎</span>' +
           '<span><strong>Hotline: ' + SITE.hotline + '</strong><span>Gọi trực tiếp — hỗ trợ 24/7</span></span>' +
         '</a>' +
