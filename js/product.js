@@ -19,12 +19,13 @@ function initProductPage() {
   }
 
   /* ----- SEO động ----- */
-  document.title = p.name + " | Giá " + formatPrice(p.price) + " | Tuấn Whisky — Tuấn Paris";
+  document.title = p.name + (p.price != null ? " | Giá " + formatPrice(p.price) : " | Liên hệ báo giá") + " | Tuấn Whisky — Tuấn Paris";
   var meta = document.querySelector('meta[name="description"]');
   if (meta) {
     meta.setAttribute("content",
       p.name + " chính hãng — " + p.type + (p.age ? " " + p.age + " năm tuổi" : "") +
-      (p.abv ? ", " + p.abv + "%" : "") + ", " + p.volume + ". Giá " + formatPrice(p.price) +
+      (p.abv ? ", " + p.abv + "%" : "") + ", " + p.volume + ". " +
+      (p.price != null ? "Giá " + formatPrice(p.price) : "Liên hệ báo giá") +
       ". Đặt mua qua Hotline " + SITE.hotline + " hoặc Facebook " + SITE.facebookName + ".");
   }
 
@@ -37,12 +38,12 @@ function initProductPage() {
     "name": p.name,
     "brand": { "@type": "Brand", "name": p.brand },
     "description": p.description,
-    "offers": {
+    "offers": p.price != null ? {
       "@type": "Offer",
       "priceCurrency": "GBP",
       "price": p.price,
       "availability": "https://schema.org/InStock"
-    }
+    } : undefined
   });
   document.head.appendChild(ld);
 
@@ -68,7 +69,9 @@ function initProductPage() {
           '<tr><td>Xuất xứ</td><td>Scotland</td></tr>' +
         '</table>' +
         '<div class="detail-price">' + formatPrice(p.price) + '</div>' +
-        '<div class="detail-vat">Giá đã gồm VAT. Liên hệ để nhận báo giá tốt nhất &amp; kiểm tra tình trạng hàng.</div>' +
+        '<div class="detail-vat">' + (p.price != null
+          ? 'Giá đã gồm VAT. Liên hệ để nhận báo giá tốt nhất &amp; kiểm tra tình trạng hàng.'
+          : 'Hàng sưu tầm hiếm — giá thay đổi theo thị trường. Liên hệ để nhận báo giá mới nhất &amp; kiểm tra tình trạng hàng.') + '</div>' +
         '<div class="detail-actions">' +
           '<button class="btn btn-gold btn-block" onclick="openBuyModal(\'' + p.slug + '\')">Mua ngay — Liên hệ đặt hàng</button>' +
           '<a class="btn btn-ghost btn-block" href="tel:' + SITE.hotline + '">☎ Gọi Hotline ' + SITE.hotline + '</a>' +

@@ -114,6 +114,7 @@ function applyCatalog() {
   }
   if (catalogState.prices.length) {
     list = list.filter(function (p) {
+      if (p.price == null) return false; // giá "Liên hệ" — không thuộc khoảng giá nào
       return PRICE_BUCKETS.some(function (r) {
         return catalogState.prices.indexOf(r.id) !== -1 && r.test(p);
       });
@@ -123,8 +124,17 @@ function applyCatalog() {
     list = list.filter(function (p) { return catalogState.types.indexOf(p.type) !== -1; });
   }
 
-  if (catalogState.sort === "price-asc")  list.sort(function (a, b) { return a.price - b.price; });
-  if (catalogState.sort === "price-desc") list.sort(function (a, b) { return b.price - a.price; });
+  // giá null ("Liên hệ") luôn xếp cuối
+  if (catalogState.sort === "price-asc")  list.sort(function (a, b) {
+    if (a.price == null) return b.price == null ? 0 : 1;
+    if (b.price == null) return -1;
+    return a.price - b.price;
+  });
+  if (catalogState.sort === "price-desc") list.sort(function (a, b) {
+    if (a.price == null) return b.price == null ? 0 : 1;
+    if (b.price == null) return -1;
+    return b.price - a.price;
+  });
   if (catalogState.sort === "age-desc")   list.sort(function (a, b) { return (b.age || 0) - (a.age || 0); });
   if (catalogState.sort === "name")       list.sort(function (a, b) { return a.name.localeCompare(b.name); });
 

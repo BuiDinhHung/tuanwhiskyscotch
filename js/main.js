@@ -5,6 +5,7 @@
 
 /* ---------- helpers ---------- */
 function formatPrice(p) {
+  if (p == null) return "Liên hệ"; // hàng sưu tầm hiếm — báo giá theo thời điểm
   return "£" + p.toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
