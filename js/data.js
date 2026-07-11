@@ -2186,4 +2186,311 @@ const PRODUCTS = [
     description: "Balvenie Tun 1509 - Batch 2 — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
     abv: null, volume: "70cl", slug: "balvenie-tun-1509-batch-2", buyLink: "contact"
   },
+  /* ---- BALVENIE — bổ sung từ thewhiskyworld.com (07/2026) ---- */
+  {
+    id: 306, name: "Balvenie 12 Year Old - DoubleWood - 20cl", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: 12, price: 17.9,
+    image: "images/products/balvenie-12-year-old-doublewood-20cl.jpg",
+    description: "Balvenie 12 Year Old - DoubleWood - 20cl — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "20cl", slug: "balvenie-12-year-old-doublewood-20cl", buyLink: "contact"
+  },
+  {
+    id: 307, name: "Balvenie 12 Year Old Double Wood - 25th Anniversary Edition", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: 12, price: 119.9,
+    image: "images/products/balvenie-12-year-old-double-wood-25th-anniversary-edition.jpg",
+    description: "Balvenie 12 Year Old Double Wood - 25th Anniversary Edition — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-12-year-old-double-wood-25th-anniversary-edition", buyLink: "contact"
+  },
+  {
+    id: 308, name: "Balvenie 15 Year Old - Single Barrel - Old Bottling - 5cl Miniature", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: 15, price: 49.9,
+    image: "images/products/balvenie-15-year-old-single-barrel-old-bottling-5cl-miniature.jpg",
+    description: "Balvenie 15 Year Old - Single Barrel - Old Bottling - 5cl Miniature — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "5cl", slug: "balvenie-15-year-old-single-barrel-old-bottling-5cl-miniature", buyLink: "contact"
+  },
+  {
+    id: 309, name: "Balvenie 17 year Old - Week of Peat", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: 17, price: 115.9,
+    image: "images/products/balvenie-17-year-old-week-of-peat.jpg",
+    description: "Balvenie 17 year Old - Week of Peat — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-17-year-old-week-of-peat", buyLink: "contact"
+  },
+  {
+    id: 310, name: "Balvenie 19 Year Old - Week of Peat", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: 19, price: 299.9,
+    image: "images/products/balvenie-19-year-old-week-of-peat.jpg",
+    description: "Balvenie 19 Year Old - Week of Peat — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-19-year-old-week-of-peat", buyLink: "contact"
+  },
+  {
+    id: 311, name: "Balvenie 30 Year Old - Old Bottling - Box Slightly Damaged", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: 30, price: 2499.9,
+    image: "images/products/balvenie-30-year-old-old-bottling-box-slightly-damaged.jpg",
+    description: "Balvenie 30 Year Old - Old Bottling - Box Slightly Damaged — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-30-year-old-old-bottling-box-slightly-damaged", buyLink: "contact"
+  },
+  {
+    id: 312, name: "Balvenie Tun 1509 - Batch 5", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: null, price: 399.9,
+    image: "images/products/balvenie-tun-1509-batch-5.jpg",
+    description: "Balvenie Tun 1509 - Batch 5 — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-tun-1509-batch-5", buyLink: "contact"
+  },
+  {
+    id: 313, name: "Balvenie Tun 1509 - Batch 6", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: null, price: 349.9,
+    image: "images/products/balvenie-tun-1509-batch-6.jpg",
+    description: "Balvenie Tun 1509 - Batch 6 — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-tun-1509-batch-6", buyLink: "contact"
+  },
+  {
+    id: 314, name: "Balvenie Tun 1509 - Batch 7", brand: "Balvenie", category: "balvenie",
+    type: "Single Malt", age: null, price: 299.9,
+    image: "images/products/balvenie-tun-1509-batch-7.jpg",
+    description: "Balvenie Tun 1509 - Batch 7 — Balvenie chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "balvenie-tun-1509-batch-7", buyLink: "contact"
+  },
+  /* ---- DALMORE — bổ sung từ thewhiskyworld.com (07/2026) ---- */
+  {
+    id: 315, name: "Dalmore 12 Year Old - Gift Tin", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 12, price: 64.9,
+    image: "images/products/dalmore-12-year-old-gift-tin.jpg",
+    description: "Dalmore 12 Year Old - Gift Tin — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-12-year-old-gift-tin", buyLink: "contact"
+  },
+  {
+    id: 316, name: "Dalmore 12 Year Old - Gift Tin - With Personalised Engraving", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 12, price: 71.9,
+    image: "images/products/dalmore-12-year-old-gift-tin-with-personalised-engraving.jpg",
+    description: "Dalmore 12 Year Old - Gift Tin - With Personalised Engraving — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-12-year-old-gift-tin-with-personalised-engraving", buyLink: "contact"
+  },
+  {
+    id: 317, name: "Dalmore 14 Year Old - Oloroso Cask Finish - Darkness", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 14, price: 128.9,
+    image: "images/products/dalmore-14-year-old-oloroso-cask-finish-darkness.jpg",
+    description: "Dalmore 14 Year Old - Oloroso Cask Finish - Darkness — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-14-year-old-oloroso-cask-finish-darkness", buyLink: "contact"
+  },
+  {
+    id: 318, name: "Dalmore 15 Year Old - Pedestal Tin", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 15, price: 109.9,
+    image: "images/products/dalmore-15-year-old-pedestal-tin.jpg",
+    description: "Dalmore 15 Year Old - Pedestal Tin — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-15-year-old-pedestal-tin", buyLink: "contact"
+  },
+  {
+    id: 319, name: "Dalmore 15 Year Old - Pedestal Tin - With Personalised Engraving", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 15, price: 116.9,
+    image: "images/products/dalmore-15-year-old-pedestal-tin-with-personalised-engraving.jpg",
+    description: "Dalmore 15 Year Old - Pedestal Tin - With Personalised Engraving — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-15-year-old-pedestal-tin-with-personalised-engraving", buyLink: "contact"
+  },
+  {
+    id: 320, name: "Dalmore 1990 - 27 Year Old - Cask 252 - Mackillop's Choice", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 27, price: 499.9,
+    image: "images/products/dalmore-1990-27-year-old-cask-252-mackillops-choice.jpg",
+    description: "Dalmore 1990 - 27 Year Old - Cask 252 - Mackillop's Choice — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-1990-27-year-old-cask-252-mackillops-choice", buyLink: "contact"
+  },
+  {
+    id: 321, name: "Dalmore 2007 - Vintage Collection", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: null, price: 149.9,
+    image: "images/products/dalmore-2007-vintage-collection.jpg",
+    description: "Dalmore 2007 - Vintage Collection — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-2007-vintage-collection", buyLink: "contact"
+  },
+  {
+    id: 322, name: "Dalmore 21 Year Old - 2022 Release", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: 21, price: 574.9,
+    image: "images/products/dalmore-21-year-old-2022-release.jpg",
+    description: "Dalmore 21 Year Old - 2022 Release — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-21-year-old-2022-release", buyLink: "contact"
+  },
+  {
+    id: 323, name: "Dalmore Port Wood Reserve - 2 Glass Gift Pack", brand: "Dalmore", category: "dalmore",
+    type: "Single Malt", age: null, price: 79.9,
+    image: "images/products/dalmore-port-wood-reserve-2-glass-gift-pack.jpg",
+    description: "Dalmore Port Wood Reserve - 2 Glass Gift Pack — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "dalmore-port-wood-reserve-2-glass-gift-pack", buyLink: "contact"
+  },
+  /* ---- GLENFIDDICH — bổ sung từ thewhiskyworld.com (07/2026) ---- */
+  {
+    id: 324, name: "Glenfiddich 12 Year Old - 5cl Miniature - Without Box", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 12, price: 4.49,
+    image: "images/products/glenfiddich-12-year-old-5cl-miniature-without-box.jpg",
+    description: "Glenfiddich 12 Year Old - 5cl Miniature - Without Box — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "5cl", slug: "glenfiddich-12-year-old-5cl-miniature-without-box", buyLink: "contact"
+  },
+  {
+    id: 325, name: "Glenfiddich 14 Year Old - Rich Oak", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 14, price: 149.9,
+    image: "images/products/glenfiddich-14-year-old-rich-oak.jpg",
+    description: "Glenfiddich 14 Year Old - Rich Oak — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-14-year-old-rich-oak", buyLink: "contact"
+  },
+  {
+    id: 326, name: "Glenfiddich 14 Year Old Rich Oak - Gift Box", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 14, price: 199.9,
+    image: "images/products/glenfiddich-14-year-old-rich-oak-gift-box.jpg",
+    description: "Glenfiddich 14 Year Old Rich Oak - Gift Box — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-14-year-old-rich-oak-gift-box", buyLink: "contact"
+  },
+  {
+    id: 327, name: "Glenfiddich 15 Year Old - 2 Glasses Gift Pack", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 15, price: 54.9,
+    image: "images/products/glenfiddich-15-year-old-2-glasses-gift-pack.jpg",
+    description: "Glenfiddich 15 Year Old - 2 Glasses Gift Pack — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-15-year-old-2-glasses-gift-pack", buyLink: "contact"
+  },
+  {
+    id: 328, name: "Glenfiddich 15 Year Old - Hip Flask Gift Pack", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 15, price: 79.9,
+    image: "images/products/glenfiddich-15-year-old-hip-flask-gift-pack.jpg",
+    description: "Glenfiddich 15 Year Old - Hip Flask Gift Pack — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-15-year-old-hip-flask-gift-pack", buyLink: "contact"
+  },
+  {
+    id: 329, name: "Glenfiddich 18 Year Old - 20cl", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 18, price: 29.9,
+    image: "images/products/glenfiddich-18-year-old-20cl.jpg",
+    description: "Glenfiddich 18 Year Old - 20cl — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "20cl", slug: "glenfiddich-18-year-old-20cl", buyLink: "contact"
+  },
+  {
+    id: 330, name: "Glenfiddich 18 Year Old - Ancient Reserve Black - Damaged Box", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 18, price: 499.9,
+    image: "images/products/glenfiddich-18-year-old-ancient-reserve-black-damaged-box.jpg",
+    description: "Glenfiddich 18 Year Old - Ancient Reserve Black - Damaged Box — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-18-year-old-ancient-reserve-black-damaged-box", buyLink: "contact"
+  },
+  {
+    id: 331, name: "Glenfiddich 18 Year Old - Ancient Reserve Blue", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 18, price: 499.9,
+    image: "images/products/glenfiddich-18-year-old-ancient-reserve-blue.jpg",
+    description: "Glenfiddich 18 Year Old - Ancient Reserve Blue — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-18-year-old-ancient-reserve-blue", buyLink: "contact"
+  },
+  {
+    id: 332, name: "Glenfiddich 18 Year Old - Excellence", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 18, price: 499.9,
+    image: "images/products/glenfiddich-18-year-old-excellence.jpg",
+    description: "Glenfiddich 18 Year Old - Excellence — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-18-year-old-excellence", buyLink: "contact"
+  },
+  {
+    id: 333, name: "Glenfiddich 18 Year Old - Hip Flask Gift Pack", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 18, price: 103.9,
+    image: "images/products/glenfiddich-18-year-old-hip-flask-gift-pack.jpg",
+    description: "Glenfiddich 18 Year Old - Hip Flask Gift Pack — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-18-year-old-hip-flask-gift-pack", buyLink: "contact"
+  },
+  {
+    id: 334, name: "Glenfiddich 18 Year Old - Superior Reserve", brand: "Glenfiddich", category: "glenfiddich",
+    type: "Single Malt", age: 18, price: 979.9,
+    image: "images/products/glenfiddich-18-year-old-superior-reserve.jpg",
+    description: "Glenfiddich 18 Year Old - Superior Reserve — Glenfiddich chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "glenfiddich-18-year-old-superior-reserve", buyLink: "contact"
+  },
+  /* ---- MACALLAN — bổ sung từ thewhiskyworld.com (07/2026) ---- */
+  {
+    id: 335, name: "Macallan 12 Year Old - Double Cask", brand: "Macallan", category: "macallan",
+    type: "Single Malt", age: 12, price: 74.9,
+    image: "images/products/macallan-12-year-old-double-cask.jpg",
+    description: "Macallan 12 Year Old - Double Cask — Macallan chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "macallan-12-year-old-double-cask", buyLink: "contact"
+  },
+  {
+    id: 336, name: "Macallan 12 Year Old - Double Cask - With Personalised Engraving", brand: "Macallan", category: "macallan",
+    type: "Single Malt", age: 12, price: 81.4,
+    image: "images/products/macallan-12-year-old-double-cask-with-personalised-engraving.jpg",
+    description: "Macallan 12 Year Old - Double Cask - With Personalised Engraving — Macallan chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "macallan-12-year-old-double-cask-with-personalised-engraving", buyLink: "contact"
+  },
+  {
+    id: 337, name: "Macallan 12 Year Old - Sherry Oak", brand: "Macallan", category: "macallan",
+    type: "Single Malt", age: 12, price: 84.9,
+    image: "images/products/macallan-12-year-old-sherry-oak.jpg",
+    description: "Macallan 12 Year Old - Sherry Oak — Macallan chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "macallan-12-year-old-sherry-oak", buyLink: "contact"
+  },
+  {
+    id: 338, name: "Macallan 18 Year Old - Double Cask - 2023 Release", brand: "Macallan", category: "macallan",
+    type: "Single Malt", age: 18, price: 309.9,
+    image: "images/products/macallan-18-year-old-double-cask-2023-release.jpg",
+    description: "Macallan 18 Year Old - Double Cask - 2023 Release — Macallan chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "macallan-18-year-old-double-cask-2023-release", buyLink: "contact"
+  },
+  {
+    id: 339, name: "Macallan 1824 Decanter - MMXII Release", brand: "Macallan", category: "macallan",
+    type: "Single Malt", age: null, price: 4999.9,
+    image: "images/products/macallan-1824-decanter-mmxii-release.jpg",
+    description: "Macallan 1824 Decanter - MMXII Release — Macallan chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "macallan-1824-decanter-mmxii-release", buyLink: "contact"
+  },
+  /* ---- ROYAL SALUTE — bổ sung từ thewhiskyworld.com (07/2026) ---- */
+  {
+    id: 340, name: "Royal Salute 21 Year Old - Blue Decanter", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 21, price: 119.9,
+    image: "images/products/royal-salute-21-year-old-blue-decanter.jpg",
+    description: "Royal Salute 21 Year Old - Blue Decanter — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-21-year-old-blue-decanter", buyLink: "contact"
+  },
+  {
+    id: 341, name: "Royal Salute 21 Year Old - Jodhpur Edition", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 21, price: 161.9,
+    image: "images/products/royal-salute-21-year-old-jodhpur-edition.jpg",
+    description: "Royal Salute 21 Year Old - Jodhpur Edition — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-21-year-old-jodhpur-edition", buyLink: "contact"
+  },
+  {
+    id: 342, name: "Royal Salute 21 Year Old - Peated Blend", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 21, price: 159.9,
+    image: "images/products/royal-salute-21-year-old-peated-blend.jpg",
+    description: "Royal Salute 21 Year Old - Peated Blend — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-21-year-old-peated-blend", buyLink: "contact"
+  },
+  {
+    id: 343, name: "Royal Salute 23 Year Old - Taiwanese Exclusive", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 23, price: 399.9,
+    image: "images/products/royal-salute-23-year-old-taiwanese-exclusive.jpg",
+    description: "Royal Salute 23 Year Old - Taiwanese Exclusive — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-23-year-old-taiwanese-exclusive", buyLink: "contact"
+  },
+  {
+    id: 344, name: "Royal Salute 25 Year Old", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 25, price: 269.9,
+    image: "images/products/royal-salute-25-year-old.jpg",
+    description: "Royal Salute 25 Year Old — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-25-year-old", buyLink: "contact"
+  },
+  {
+    id: 345, name: "Royal Salute 29 Year Old - PX Sherry Cask Finish", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 29, price: 549.9,
+    image: "images/products/royal-salute-29-year-old-px-sherry-cask-finish.jpg",
+    description: "Royal Salute 29 Year Old - PX Sherry Cask Finish — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-29-year-old-px-sherry-cask-finish", buyLink: "contact"
+  },
+  {
+    id: 346, name: "Royal Salute Diamond Tribute", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: null, price: 299.9,
+    image: "images/products/royal-salute-diamond-tribute.jpg",
+    description: "Royal Salute Diamond Tribute — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-diamond-tribute", buyLink: "contact"
+  },
+  {
+    id: 347, name: "Royal Salute Platinum Jubilee Edition - The Cullinan V Brooch", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: null, price: 30000.0,
+    image: "images/products/royal-salute-platinum-jubilee-edition-the-cullinan-v-brooch.jpg",
+    description: "Royal Salute Platinum Jubilee Edition - The Cullinan V Brooch — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-platinum-jubilee-edition-the-cullinan-v-brooch", buyLink: "contact"
+  },
+  {
+    id: 348, name: "Royal Salute The Royal Wedding Edition", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: null, price: 6999.9,
+    image: "images/products/royal-salute-the-royal-wedding-edition.jpg",
+    description: "Royal Salute The Royal Wedding Edition — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
+    abv: null, volume: "70cl", slug: "royal-salute-the-royal-wedding-edition", buyLink: "contact"
+  },
+
 ];
