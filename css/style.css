@@ -113,6 +113,10 @@ h1, h2, h3, h4, .logo-text strong { font-family: var(--font-serif); font-weight:
   font-family: var(--font-serif); font-size: 24px; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
 }
+.logo-mark-img {
+  width: 48px; height: 48px; border-radius: 50%;
+  display: block; flex-shrink: 0;
+}
 .logo-text { line-height: 1.15; }
 .logo-text strong { display: block; font-size: 21px; color: var(--ink); }
 .logo-text span { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-2); }

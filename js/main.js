@@ -133,7 +133,7 @@ function buildHeader(active) {
   '<div class="container header-main">' +
     '<button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>' +
     '<a class="logo" href="index.html">' +
-      '<span class="logo-mark">T</span>' +
+      '<img class="logo-mark-img" src="images/logo.png" alt="Maccallan Tuấn Whisky">' +
       '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Tuấn Paris · Est. Scotch</span></span>' +
     '</a>' +
     '<div class="header-search">' +
@@ -168,7 +168,7 @@ function buildFooter() {
     '<div class="footer-grid">' +
       '<div class="footer-about">' +
         '<a class="logo" href="index.html">' +
-          '<span class="logo-mark">T</span>' +
+          '<img class="logo-mark-img" src="images/logo.png" alt="Maccallan Tuấn Whisky">' +
           '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Tuấn Paris</span></span>' +
         '</a>' +
         '<p>Maccallan Tuấn Whisky — chuyên whisky Scotland chính hãng: Macallan, Royal Salute, Glenfiddich, Dalmore, Balvenie. Tư vấn tận tâm, giao hàng toàn quốc.</p>' +
@@ -224,7 +224,7 @@ function buildAgeGate() {
   el.id = "ageGate";
   el.innerHTML = '' +
     '<div class="age-gate-box">' +
-      '<div class="brand-mark logo-mark" style="margin:0 auto;width:64px;height:64px;font-size:30px;">T</div>' +
+      '<img class="logo-mark-img" src="images/logo.png" alt="Maccallan Tuấn Whisky" style="margin:0 auto;width:80px;height:80px;display:block;">' +
       '<h2>Bạn đã đủ 18 tuổi chưa?</h2>' +
       '<p>' + SITE.domain + ' bán các sản phẩm rượu có cồn. Vui lòng xác nhận bạn đã đủ tuổi hợp pháp để tiếp tục.</p>' +
       '<div class="age-gate-actions">' +
