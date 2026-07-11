@@ -1,0 +1,1 @@
+﻿Dat anh san pham vao thu muc nay, ten file trung voi truong 'image' trong js/data.js (vd: macallan-12-double-cask.jpg). Chua co anh thi site tu hien chai minh hoa SVG.

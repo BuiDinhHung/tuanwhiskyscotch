@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rượu Macallan Chính Hãng — Bảng Giá 12, 18, 25, 30 Năm | Tuấn Whisky</title>
+  <meta name="description" content="Macallan chính hãng tại Tuấn Whisky — Tuấn Paris: Double Cask, Sherry Oak 12–30 năm, Rare Cask, M Decanter, Red Collection. Giá tốt, giao toàn quốc. Hotline 07577888999.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230d0b08' stroke='%23c9a227' stroke-width='4'/><text x='50' y='66' text-anchor='middle' font-family='Georgia' font-size='52' fill='%23c9a227'>T</text></svg>">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Macallan</div>
+    <span class="eyebrow">The Macallan · Speyside</span>
+    <h1>Rượu Macallan</h1>
+    <p>Đỉnh cao Single Malt Scotland — nổi tiếng toàn cầu với phong cách ủ thùng Sherry Oak từ Jerez. Từ Macallan 12 Double Cask quen thuộc đến những tuyệt phẩm Rare Cask, M Decanter và Red Collection dành cho giới sưu tầm.</p>
+  </div>
+</section>
+
+<div class="container catalog-layout">
+  <aside class="filters" id="filters"></aside>
+  <div>
+    <div class="catalog-toolbar">
+      <button class="btn btn-dark btn-sm filters-toggle" onclick="toggleFilters()">☰ Bộ lọc</button>
+      <div class="catalog-count" id="catalogCount"></div>
+      <select class="sort-select" onchange="onSortChange(this)">
+        <option value="default">Sắp xếp: Mặc định</option>
+        <option value="price-asc">Giá: Thấp → Cao</option>
+        <option value="price-desc">Giá: Cao → Thấp</option>
+        <option value="age-desc">Tuổi rượu: Cao nhất</option>
+        <option value="name">Tên: A → Z</option>
+      </select>
+    </div>
+    <div class="product-grid" id="catalogGrid"></div>
+  </div>
+</div>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/catalog.js"></script>
+<script>
+  initPage("macallan");
+  initCatalog({ brand: "Macallan" });
+</script>
+</body>
+</html>
