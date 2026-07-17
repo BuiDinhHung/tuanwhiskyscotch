@@ -134,7 +134,7 @@ function buildHeader(active) {
     '<button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>' +
     '<a class="logo" href="index.html">' +
       '<img class="logo-mark-img" src="images/logo.png" alt="Maccallan Tuấn Whisky">' +
-      '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Tuấn Paris · Est. Scotch</span></span>' +
+      '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Est. Scotch</span></span>' +
     '</a>' +
     '<div class="header-search">' +
       '<form action="products.html" method="get" role="search">' +
@@ -169,7 +169,7 @@ function buildFooter() {
       '<div class="footer-about">' +
         '<a class="logo" href="index.html">' +
           '<img class="logo-mark-img" src="images/logo.png" alt="Maccallan Tuấn Whisky">' +
-          '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Tuấn Paris</span></span>' +
+          '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Est. Scotch</span></span>' +
         '</a>' +
         '<p>Maccallan Tuấn Whisky — chuyên whisky Scotland chính hãng: Macallan, Royal Salute, Glenfiddich, Dalmore, Balvenie. Tư vấn tận tâm, giao hàng toàn quốc.</p>' +
       '</div>' +
@@ -178,22 +178,25 @@ function buildFooter() {
         '<li><a href="products.html">Tất cả sản phẩm</a></li>' +
         '<li><a href="tel:' + SITE.hotlineIntl + '">Đặt hàng qua Hotline</a></li>' +
         '<li><a href="' + SITE.zaloUrl + '" target="_blank" rel="noopener">Chat Zalo</a></li>' +
+        '<li><a href="' + SITE.whatsappUrl + '" target="_blank" rel="noopener">Chat WhatsApp</a></li>' +
         '<li><a href="' + SITE.facebookUrl + '" target="_blank" rel="noopener">Facebook: ' + SITE.facebookName + '</a></li>' +
       '</ul></div>' +
       '<div id="lien-he"><h4>Liên hệ</h4><ul class="footer-contact">' +
         '<li><span class="k">Website</span> <span>' + SITE.domain + '</span></li>' +
         '<li><span class="k">Email</span> <a href="mailto:' + SITE.email + '">' + SITE.email + '</a></li>' +
         '<li><span class="k">Hotline</span> <a href="tel:' + SITE.hotlineIntl + '">' + SITE.hotline + '</a></li>' +
+        '<li><span class="k">WhatsApp/Zalo</span> <a href="' + SITE.whatsappUrl + '" target="_blank" rel="noopener">' + SITE.hotlineIntl + '</a></li>' +
         '<li><span class="k">Facebook</span> <a href="' + SITE.facebookUrl + '" target="_blank" rel="noopener">' + SITE.facebookName + '</a></li>' +
       '</ul></div>' +
     '</div>' +
     '<div class="footer-bottom">' +
-      '<div>© ' + new Date().getFullYear() + ' ' + SITE.domain + ' — Maccallan Tuấn Whisky / Tuấn Paris.</div>' +
+      '<div>© ' + new Date().getFullYear() + ' ' + SITE.domain + ' — Maccallan Tuấn Whisky.</div>' +
       '<div class="drink-notice">Sản phẩm dành cho người trên 18 tuổi. Thưởng thức có trách nhiệm — đã uống rượu bia, không lái xe.</div>' +
     '</div>' +
   '</div>' +
   '<div class="float-contact">' +
     '<a class="float-zalo" href="' + SITE.zaloUrl + '" target="_blank" rel="noopener" aria-label="Chat Zalo">Zalo</a>' +
+    '<a class="float-whatsapp" href="' + SITE.whatsappUrl + '" target="_blank" rel="noopener" aria-label="Chat WhatsApp">WA</a>' +
     '<a class="float-phone" href="tel:' + SITE.hotlineIntl + '" aria-label="Gọi hotline">☎</a>' +
   '</div>';
 }
@@ -275,7 +278,11 @@ function buildBuyModal() {
         '</a>' +
         '<a class="contact-link" id="buyZalo" href="' + SITE.zaloUrl + '" target="_blank" rel="noopener">' +
           '<span class="icon icon-zalo">Z</span>' +
-          '<span><strong>Zalo: ' + SITE.hotline + '</strong><span>Chat Zalo tư vấn &amp; báo giá</span></span>' +
+          '<span><strong>Zalo: ' + SITE.hotlineIntl + '</strong><span>Chat Zalo tư vấn &amp; báo giá</span></span>' +
+        '</a>' +
+        '<a class="contact-link" href="' + SITE.whatsappUrl + '" target="_blank" rel="noopener">' +
+          '<span class="icon icon-whatsapp">W</span>' +
+          '<span><strong>WhatsApp: ' + SITE.hotlineIntl + '</strong><span>Chat WhatsApp tư vấn &amp; báo giá</span></span>' +
         '</a>' +
         '<a class="contact-link" href="tel:' + SITE.hotlineIntl + '">' +
           '<span class="icon icon-phone">☎</span>' +

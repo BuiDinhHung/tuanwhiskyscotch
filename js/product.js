@@ -19,7 +19,7 @@ function initProductPage() {
   }
 
   /* ----- SEO động ----- */
-  document.title = p.name + (p.price != null ? " | Giá " + formatPrice(p.price) : " | Liên hệ báo giá") + " | Tuấn Whisky — Tuấn Paris";
+  document.title = p.name + (p.price != null ? " | Giá " + formatPrice(p.price) : " | Liên hệ báo giá") + " | Tuấn Whisky";
   var meta = document.querySelector('meta[name="description"]');
   if (meta) {
     meta.setAttribute("content",

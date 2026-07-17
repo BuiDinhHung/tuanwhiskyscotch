@@ -1,4 +1,4 @@
-# Tuấn Whisky — Tuấn Paris (Tuanwhiskyscotch.com)
+# Tuấn Whisky (Tuanwhiskyscotch.com)
 
 Website giới thiệu whisky Scotland cao cấp — giao diện sáng kiểu shop whisky Anh Quốc
 (nền kem / thẻ trắng / xanh rêu đậm / vàng đồng). Site tĩnh 100% HTML/CSS/JS,
@@ -66,8 +66,8 @@ Sửa trong `js/data.js`, object `SITE` ở đầu file:
 - Website: Tuanwhiskyscotch.com
 - Email: Tuanbeonx@gmail.com
 - Hotline: 07577888999
-- Facebook: Tuấn Paris — https://www.facebook.com/tuanwhisky.88
-- Zalo: link `zalo.me` theo số hotline — **cần kiểm tra tài khoản Zalo có đăng ký đúng số này không**
+- Facebook: Tuấn Whisky — https://www.facebook.com/tuanwhisky.88
+- Zalo / WhatsApp: +447577888999
 
 ## Tính năng
 

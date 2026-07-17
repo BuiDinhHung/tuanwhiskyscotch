@@ -22,14 +22,15 @@
 
 const SITE = {
   name: "Tuấn Whisky",
-  fullName: "Maccallan Tuấn Whisky / Tuấn Paris",
+  fullName: "Maccallan Tuấn Whisky",
   domain: "Tuanwhiskyscotch.com",
   email: "Tuanbeonx@gmail.com",
   hotline: "07577888999",
   hotlineIntl: "+447577888999",
-  facebookName: "Tuấn Paris",
+  facebookName: "Tuấn Whisky",
   facebookUrl: "https://www.facebook.com/tuanwhisky.88",
-  zaloUrl: "https://zalo.me/07577888999"
+  zaloUrl: "https://zalo.me/447577888999",
+  whatsappUrl: "https://wa.me/447577888999"
 };
 
 const BRANDS = [
