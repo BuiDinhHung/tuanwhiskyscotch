@@ -38,7 +38,9 @@ const BRANDS = [
   { name: "Royal Salute", slug: "royal-salute", tagline: "Blended Scotch hoàng gia, tối thiểu 21 năm tuổi, đựng trong bình sứ thủ công." },
   { name: "Glenfiddich",  slug: "glenfiddich",  tagline: "Nhà chưng cất gia đình lâu đời nhất Scotland, biểu tượng hươu sừng." },
   { name: "Dalmore",      slug: "dalmore",      tagline: "Single Malt Highland sang trọng với biểu tượng đầu hươu 12 gạc." },
-  { name: "Balvenie",     slug: "balvenie",     tagline: "Thủ công truyền thống — tự trồng lúa mạch, tự đóng thùng, tự ủ rượu." }
+  { name: "Balvenie",     slug: "balvenie",     tagline: "Thủ công truyền thống — tự trồng lúa mạch, tự đóng thùng, tự ủ rượu." },
+  { name: "Chivas Royal", slug: "chivas-royal", tagline: "Blended Scotch danh giá, hài hoà và sang trọng — lựa chọn cho những dịp trang trọng nhất." },
+  { name: "Hibiki",       slug: "hibiki",       tagline: "Blended whisky Nhật Bản tinh tế — hoà quyện hoa, mật ong và gỗ sồi Mizunara." }
 ];
 
 const PRODUCTS = [

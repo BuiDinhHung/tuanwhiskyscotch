@@ -18,6 +18,8 @@ không cần build tool, không cần server đặc biệt — upload lên bất
 ├── glenfiddich.html    Trang danh mục Glenfiddich
 ├── dalmore.html        Trang danh mục Dalmore
 ├── balvenie.html       Trang danh mục Balvenie
+├── chivas-royal.html   Trang danh mục Chivas Royal (chưa có sản phẩm)
+├── hibiki.html         Trang danh mục Hibiki (chưa có sản phẩm)
 ├── css/style.css       Toàn bộ giao diện
 ├── js/data.js          ★ DỮ LIỆU SẢN PHẨM — chỉnh sửa ở đây
 ├── js/main.js          Header, mega menu, footer, age gate, modal Mua ngay
@@ -34,7 +36,7 @@ Mở `js/data.js`, copy một object trong mảng `PRODUCTS` và sửa:
 {
   id: 48,                                  // số duy nhất, tăng dần
   name: "Macallan 12 Year Old Triple Cask",
-  brand: "Macallan",                       // đúng 1 trong 5 brand
+  brand: "Macallan",                       // đúng 1 trong 7 brand
   category: "macallan",                    // slug trang brand
   type: "Single Malt",                     // hoặc "Blended"
   age: 12,                                 // null nếu không ghi tuổi
@@ -73,7 +75,7 @@ Sửa trong `js/data.js`, object `SITE` ở đầu file:
 
 - Tìm kiếm ở header (không phân biệt dấu) → kết quả tại `products.html?q=...`
 - Age gate 18+ (lưu localStorage, chỉ hỏi lần đầu; thêm `?nogate=1` vào URL để bỏ qua khi kiểm thử)
-- Mega menu 5 brand, mỗi cột 5 sản phẩm + link "Xem tất cả"
+- Mega menu 7 brand, mỗi cột 5 sản phẩm + link "Xem tất cả"
 - Bộ lọc: thương hiệu, tuổi rượu (5 nhóm), khoảng giá (5 mức), loại rượu
 - Sắp xếp: giá tăng/giảm, tuổi rượu, tên A–Z
 - Nút **Mua ngay** → modal liên hệ Facebook / Zalo / Hotline (không checkout online)

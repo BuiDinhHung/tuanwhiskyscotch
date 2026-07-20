@@ -23,7 +23,9 @@ var BRAND_STYLE = {
   "Royal Salute": { label: "#1f3a6e", liquid: "#7d4310" },
   "Glenfiddich":  { label: "#1e5c3a", liquid: "#a3660f" },
   "Dalmore":      { label: "#26262b", liquid: "#6f3c0e" },
-  "Balvenie":     { label: "#5a4632", liquid: "#9c5f10" }
+  "Balvenie":     { label: "#5a4632", liquid: "#9c5f10" },
+  "Chivas Royal": { label: "#7a1020", liquid: "#8a4a12" },
+  "Hibiki":       { label: "#8a6d1f", liquid: "#c98a2e" }
 };
 
 /* Ảnh chai minh hoạ SVG — dùng khi images/products/... chưa có file thật */
@@ -171,7 +173,7 @@ function buildFooter() {
           '<img class="logo-mark-img" src="images/logo.png" alt="Maccallan Tuấn Whisky">' +
           '<span class="logo-text"><strong>Tuấn Whisky</strong><span>Est. Scotch</span></span>' +
         '</a>' +
-        '<p>Maccallan Tuấn Whisky — chuyên whisky Scotland chính hãng: Macallan, Royal Salute, Glenfiddich, Dalmore, Balvenie. Tư vấn tận tâm, giao hàng toàn quốc.</p>' +
+        '<p>Maccallan Tuấn Whisky — chuyên whisky chính hãng: Macallan, Royal Salute, Glenfiddich, Dalmore, Balvenie, Chivas Royal, Hibiki. Tư vấn tận tâm, giao hàng toàn quốc.</p>' +
       '</div>' +
       '<div><h4>Danh mục</h4><ul>' + brandLinks + '</ul></div>' +
       '<div><h4>Hỗ trợ</h4><ul>' +
