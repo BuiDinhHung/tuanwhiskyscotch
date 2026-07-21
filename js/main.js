@@ -192,7 +192,7 @@ function buildFooter() {
       '</ul></div>' +
     '</div>' +
     '<div class="footer-bottom">' +
-      '<div>© ' + new Date().getFullYear() + ' ' + SITE.domain + ' — Maccallan Tuấn Whisky.</div>' +
+      '<div>Copyright © ' + new Date().getFullYear() + ' Hoangcaster</div>' +
       '<div class="drink-notice">Sản phẩm dành cho người trên 18 tuổi. Thưởng thức có trách nhiệm — đã uống rượu bia, không lái xe.</div>' +
     '</div>' +
   '</div>' +
