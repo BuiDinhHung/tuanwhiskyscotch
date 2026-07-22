@@ -1277,8 +1277,8 @@ const PRODUCTS = [
     abv: null, volume: "70cl", slug: "royal-salute-25-year-old-the-treasured-blend", buyLink: "contact"
   },
   {
-    id: 175, name: "Chivas Regal 25 Year Old Blended Scotch Whisky", brand: "Dalmore", category: "dalmore",
-    type: "Single Malt", age: 25, price: 299.9,
+    id: 175, name: "Chivas Regal 25 Year Old Blended Scotch Whisky", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 25, price: 299.9,
     image: "images/products/chivas-regal-25-year-old-blended-scotch-whisky.jpg",
     description: "Chivas Regal 25 Year Old Blended Scotch Whisky — Dalmore chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
     abv: null, volume: "70cl", slug: "chivas-regal-25-year-old-blended-scotch-whisky", buyLink: "contact"
@@ -2504,6 +2504,180 @@ const PRODUCTS = [
     image: "images/products/royal-salute-the-royal-wedding-edition.jpg",
     description: "Royal Salute The Royal Wedding Edition — Royal Salute chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn chi tiết về hương vị, năm sản xuất và tình trạng hộp/chai trước khi đặt hàng.",
     abv: null, volume: "70cl", slug: "royal-salute-the-royal-wedding-edition", buyLink: "contact"
+  },
+
+  /* ---------------- CHIVAS ROYAL ---------------- */
+  {
+    id: 350, name: "Chivas Regal Ultis", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: null, price: 179.9,
+    image: "images/products/chivas-regal-ultis-p1321-5263_medium.jpg",
+    description: "Chivas Regal Ultis — blended malt cao cấp, hoà quyện 5 loại single malt Speyside tôn vinh 5 đời Master Blender của nhà Chivas. Mượt mà, ngọt mật ong và gia vị ấm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-ultis", buyLink: "contact"
+  },
+  {
+    id: 351, name: "Chivas Regal Ultis 20 Year Old", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 20, price: 179.9,
+    image: "images/products/chivas-regal-ultis-20-year-old-p12755-20845_medium.jpg",
+    description: "Chivas Regal Ultis 20 Year Old — phiên bản blended malt 20 năm tuổi, tinh tế và sang trọng. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc. Liên hệ Tuấn Whisky để được tư vấn hương vị và tình trạng hộp/chai.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-ultis-20-year-old", buyLink: "contact"
+  },
+  {
+    id: 352, name: "Chivas Regal - The Century of Malts - 5cl Miniature", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: null, price: 49.9,
+    image: "images/products/chivas-regal-the-century-of-malts-5cl-miniature-p2355-6407_medium.jpg",
+    description: "Chivas Regal - The Century of Malts - chai mini 5cl, phiên bản hiếm pha trộn tới hàng trăm loại single malt. Món sưu tầm thú vị cho người yêu Chivas. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "5cl", slug: "chivas-regal-the-century-of-malts-5cl-miniature", buyLink: "contact"
+  },
+  {
+    id: 353, name: "Chivas Regal 12 Year Old - 4.5L Magnum", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 12, price: 216.9, /* NOW 216.90 · WAS 239.90 */
+    image: "images/products/chivas-regal-12-year-old-4-5l-magnum-p1698-24021_medium.jpg",
+    description: "Chivas Regal 12 Year Old - chai Magnum khổng lồ 4.5L, lựa chọn ấn tượng cho tiệc và quà biếu trưng bày. Vị mượt đặc trưng của Chivas 12 năm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "4.5L", slug: "chivas-regal-12-year-old-4-5l-magnum", buyLink: "contact"
+  },
+  {
+    id: 354, name: "Chivas Regal 12 Year Old - 5cl Miniature", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 12, price: 4.9,
+    image: "images/products/chivas-regal-12-year-old-5cl-miniature-p1885-5892_medium.jpg",
+    description: "Chivas Regal 12 Year Old - chai mini 5cl, tiện thử vị hoặc làm quà nhỏ. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "5cl", slug: "chivas-regal-12-year-old-5cl-miniature", buyLink: "contact"
+  },
+  {
+    id: 355, name: "Chivas Regal 18 Year Old", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 18, price: 79.9,
+    image: "images/products/chivas-regal-18-year-old-p2114-18649_medium.jpg",
+    description: "Chivas Regal 18 Year Old — blended Scotch 18 năm với 85 hương vị trong mỗi giọt, mượt như nhung, vị chocolate đen, cam khô và gia vị ấm. Biểu tượng quà biếu sang trọng. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-18-year-old", buyLink: "contact", featured: true
+  },
+  {
+    id: 356, name: "Chivas Regal 15 Year Old XV", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 15, price: 49.9,
+    image: "images/products/chivas-regal-15-year-old-xv-p7550-17080_medium.jpg",
+    description: "Chivas Regal XV 15 Year Old — ủ hoàn thiện trong thùng Cognac Grande Champagne, ngọt ngào, sang trọng và lấp lánh ánh vàng. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-15-year-old-xv", buyLink: "contact"
+  },
+  {
+    id: 357, name: "Chivas Regal Extra 13 Year Old", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 13, price: 36.9,
+    image: "images/products/chivas-regal-extra-13-year-old-p8298-14065_medium.jpg",
+    description: "Chivas Regal Extra 13 Year Old — ủ thêm trong thùng rượu Sherry Oloroso, phong phú vị mứt trái cây và mật ong. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-extra-13-year-old", buyLink: "contact"
+  },
+  {
+    id: 358, name: "Chivas Regal 12 Year Old - Limited Edition", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 12, price: 31.9,
+    image: "images/products/chivas-regal-12-year-old-limited-edition-p17535-34656_medium.jpg",
+    description: "Chivas Regal 12 Year Old - Limited Edition, thiết kế chai phiên bản giới hạn. Vị mượt, mật ong và táo chín đặc trưng của Chivas 12 năm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-12-year-old-limited-edition", buyLink: "contact"
+  },
+  {
+    id: 359, name: "Chivas Regal 15 Year Old XV - Cognac Cask", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 15, price: 44.9, /* NOW 44.90 · WAS 50.90 */
+    image: "images/products/chivas-regal-15-year-old-xv-cognac-cask-p17600-34940_medium.jpg",
+    description: "Chivas Regal XV 15 Year Old - Cognac Cask — hoàn thiện trong thùng Cognac, tôn lên vị ngọt mượt và tinh tế. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-15-year-old-xv-cognac-cask", buyLink: "contact"
+  },
+  {
+    id: 360, name: "Chivas Regal 12 Year Old - Without Box", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 12, price: 26.9,
+    image: "images/products/chivas-regal-12-year-old-without-box-p15142-27371_medium.jpg",
+    description: "Chivas Regal 12 Year Old (không hộp) — chai rượu blended Scotch 12 năm kinh điển, giá tốt cho khách dùng đều. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "chivas-regal-12-year-old-without-box", buyLink: "contact"
+  },
+  {
+    id: 361, name: "Chivas Regal 18 Year Old - Pauillac Wine Cask", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 18, price: 119.9,
+    image: "images/products/chivas-regal-18-year-old-pauillac-wine-cask-p16101-30281_medium.jpg",
+    description: "Chivas Regal 18 Year Old - Pauillac Wine Cask, thuộc bộ Ultimate Cask Collection, ủ hoàn thiện trong thùng vang đỏ Pauillac (Bordeaux). Đậm đà, vị trái cây chín và tannin mềm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 48, volume: "70cl", slug: "chivas-regal-18-year-old-pauillac-wine-cask", buyLink: "contact"
+  },
+  {
+    id: 362, name: "Chivas Regal Extra 13 Year Old - Irish Whiskey Casks - Litre", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 13, price: 54.9,
+    image: "images/products/chivas-regal-extra-13-year-old-irish-whiskey-casks-litre-p17545-34870_medium.jpg",
+    description: "Chivas Regal Extra 13 Year Old - Irish Whiskey Casks, chai dung tích lớn 1 lít, ủ hoàn thiện trong thùng whiskey Ireland cho vị mượt, ngọt và tròn vị. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "1L", slug: "chivas-regal-extra-13-year-old-irish-whiskey-casks-litre", buyLink: "contact"
+  },
+  {
+    id: 363, name: "Longmorn 25 Year Old - Secret Speyside Collection", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Single Malt", age: 25, price: 399.9,
+    image: "images/products/longmorn-25-year-old-secret-speyside-collection-p10316-16708_medium.jpg",
+    description: "Longmorn 25 Year Old - Secret Speyside Collection — single malt Speyside quý hiếm, êm mượt với vị trái cây chín, mật ong và gỗ sồi lâu năm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: null, volume: "70cl", slug: "longmorn-25-year-old-secret-speyside-collection", buyLink: "contact"
+  },
+  {
+    id: 364, name: "Longmorn 23 Year Old - Secret Speyside", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Single Malt", age: 23, price: 281.9,
+    image: "images/products/longmorn-23-year-old-secret-speyside-p17411-34310_medium.jpg",
+    description: "Longmorn 23 Year Old - Secret Speyside — single malt Speyside tuổi cao, cân bằng giữa vị ngọt trái cây và độ sâu của gỗ sồi. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: null, volume: "70cl", slug: "longmorn-23-year-old-secret-speyside", buyLink: "contact"
+  },
+  {
+    id: 365, name: "Glenallachie 2008 - 16 Year Old - Inverdarach", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Single Malt", age: 16, price: 169.9,
+    image: "images/products/glenallachie-2008-16-year-old-inverdarach-p15413-27995_medium.jpg",
+    description: "GlenAllachie 2008 - 16 Year Old - Inverdarach — single malt Speyside chưng cất năm 2008, phong cách đậm đà đặc trưng của GlenAllachie. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: null, volume: "70cl", slug: "glenallachie-2008-16-year-old-inverdarach", buyLink: "contact"
+  },
+  {
+    id: 366, name: "Ballantine's 10 Year Old", brand: "Chivas Royal", category: "chivas-royal",
+    type: "Blended", age: 10, price: 42.9,
+    image: "images/products/ballantines-10-year-old-p16626-31681_medium.jpg",
+    description: "Ballantine's 10 Year Old — blended Scotch 10 năm cân bằng, dễ uống, vị vani và mật ong nhẹ. Lựa chọn hợp lý cho dùng hằng ngày. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "ballantines-10-year-old", buyLink: "contact"
+  },
+
+  /* ---------------- HIBIKI ---------------- */
+  {
+    id: 367, name: "Hibiki 30 Year Old", brand: "Hibiki", category: "hibiki",
+    type: "Blended", age: 30, price: 4999.9, /* hàng sưu tầm cao cấp */
+    image: "images/products/hibiki-30-year-old-p6243-11030_medium.jpg",
+    description: "Hibiki 30 Year Old — đỉnh cao dòng blended whisky Nhật Bản của Suntory, hoà quyện những loại malt và grain lâu năm quý hiếm nhất. Sâu lắng, phức hợp, mượt như lụa. Hàng sưu tầm cao cấp, chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 43, volume: "70cl", slug: "hibiki-30-year-old", buyLink: "contact", featured: true
+  },
+  {
+    id: 368, name: "Suntory Hibiki 21 Year Old", brand: "Hibiki", category: "hibiki",
+    type: "Blended", age: 21, price: 714.9,
+    image: "images/products/suntory-hibiki-21-year-old-p7244-12542_medium.jpg",
+    description: "Suntory Hibiki 21 Year Old — blended whisky Nhật Bản trứ danh, nhiều lần đoạt giải World's Best Blended Whisky. Tinh tế với vị trái cây chín, mật ong và trầm hương gỗ sồi Mizunara. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 43, volume: "70cl", slug: "suntory-hibiki-21-year-old", buyLink: "contact"
+  },
+  {
+    id: 369, name: "Suntory Hibiki 21 Year Old - 100th Anniversary Edition", brand: "Hibiki", category: "hibiki",
+    type: "Blended", age: 21, price: 5499.9, /* hàng sưu tầm cao cấp */
+    image: "images/products/suntory-hibiki-21-year-old-100th-anniversary-edition-p13826-24170_medium.jpg",
+    description: "Suntory Hibiki 21 Year Old - 100th Anniversary Edition — phiên bản kỷ niệm 100 năm Suntory Whisky, hộp gỗ thủ công sang trọng. Hàng sưu tầm giới hạn quý hiếm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 43, volume: "70cl", slug: "suntory-hibiki-21-year-old-100th-anniversary-edition", buyLink: "contact"
+  },
+  {
+    id: 370, name: "Suntory Hibiki Harmony Master's Select", brand: "Hibiki", category: "hibiki",
+    type: "Blended", age: null, price: 104.9, /* NOW 104.90 · WAS 144.90 */
+    image: "images/products/suntory-hibiki-harmony-masters-select-p1746-33719_medium.jpg",
+    description: "Suntory Hibiki Harmony Master's Select — phiên bản Travel Retail dành riêng, tuyển chọn bởi Master Blender với tỷ lệ whisky ủ thùng Sherry cao hơn cho vị đậm đà, ngọt trái cây. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 43, volume: "70cl", slug: "suntory-hibiki-harmony-masters-select", buyLink: "contact"
+  },
+  {
+    id: 371, name: "Suntory Hibiki Japanese Harmony", brand: "Hibiki", category: "hibiki",
+    type: "Blended", age: null, price: 72.9, /* NOW 72.90 · WAS 79.90 */
+    image: "images/products/suntory-hibiki-japanese-harmony-p549-7269_medium.jpg",
+    description: "Suntory Hibiki Japanese Harmony — biểu tượng blended whisky Nhật Bản, pha trộn hài hoà từ nhiều loại malt và grain ủ trong các thùng gỗ khác nhau, kể cả gỗ sồi Mizunara. Hương hoa, mật ong và cam quýt thanh tao. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 43, volume: "70cl", slug: "suntory-hibiki-japanese-harmony", buyLink: "contact", featured: true
+  },
+  {
+    id: 372, name: "Suntory Hibiki Japanese Harmony - Without Box", brand: "Hibiki", category: "hibiki",
+    type: "Blended", age: null, price: 74.9,
+    image: "images/products/suntory-hibiki-japanese-harmony-without-box-p15276-27667_medium.jpg",
+    description: "Suntory Hibiki Japanese Harmony (không hộp) — vẫn trọn vẹn hương vị hoa, mật ong và Mizunara đặc trưng. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 43, volume: "70cl", slug: "suntory-hibiki-japanese-harmony-without-box", buyLink: "contact"
+  },
+
+  /* ---------------- ROYAL SALUTE (bổ sung) ---------------- */
+  {
+    id: 373, name: "Royal Salute 21 Year Old - Emerald Wade Decanter - Old Bottling", brand: "Royal Salute", category: "royal-salute",
+    type: "Blended", age: 21, price: 239.9,
+    image: "images/products/royal-salute-21-year-old-emerald-wade-decanter-old-bottling-p11141-17812_medium.jpg",
+    description: "Royal Salute 21 Year Old - Emerald Wade Decanter (đóng chai cũ) — bình sứ Wade màu ngọc lục bảo cổ điển, blended Scotch tối thiểu 21 năm tuổi. Món sưu tầm được săn tìm. Chính hãng, nguyên seal, có hoá đơn từ Anh Quốc.",
+    abv: 40, volume: "70cl", slug: "royal-salute-21-year-old-emerald-wade-decanter-old-bottling", buyLink: "contact"
   },
 
 ];
