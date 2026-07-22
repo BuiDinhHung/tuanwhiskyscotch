@@ -604,3 +604,159 @@ h1, h2, h3, h4, .logo-text strong { font-family: var(--font-serif); font-weight:
   .header-hotline span { display: none; }
   .hero-photo-glass { width: min(79px, 14.8vw); }
 }
+
+/* ============================================================
+   ✨ HIỆU ỨNG & ĐÁNH BÓNG (thêm mới — không đổi bố cục)
+   ============================================================ */
+
+/* ---------- Scroll reveal: hiện dần khi cuộn tới ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s cubic-bezier(.16, .8, .3, 1),
+              transform .7s cubic-bezier(.16, .8, .3, 1);
+  transition-delay: var(--d, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* ---------- Eyebrow: đường kẻ vàng nhỏ dẫn trước chữ ---------- */
+.section-head .eyebrow::before,
+.section-head .eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 26px; height: 1px;
+  background: var(--gold);
+  vertical-align: middle;
+  margin: 0 10px;
+  opacity: .6;
+}
+
+/* ---------- Tiêu đề section: gạch chân vàng bung ra ---------- */
+.section-head h2 { position: relative; display: inline-block; padding-bottom: 14px; }
+.section-head h2::after {
+  content: "";
+  position: absolute; left: 50%; bottom: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform: translateX(-50%);
+  transition: width .8s cubic-bezier(.16, .8, .3, 1) .2s;
+}
+.section-head.in h2::after,
+.reveal.in .section-head h2::after { width: 88px; }
+/* khi chính section-head là .reveal */
+.section-head.reveal.in h2::after { width: 88px; }
+
+/* ---------- Nút: nâng nhẹ + vệt sáng quét qua nút vàng ---------- */
+.btn { position: relative; overflow: hidden; }
+.btn-gold, .btn-dark { box-shadow: 0 6px 16px rgba(169, 129, 47, .18); }
+.btn-gold:hover, .btn-dark:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(169, 129, 47, .3); }
+.btn-ghost:hover { transform: translateY(-2px); }
+.btn-gold::after, .btn-dark::after {
+  content: "";
+  position: absolute; top: 0; left: -75%;
+  width: 50%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .45), transparent);
+  transform: skewX(-20deg);
+  transition: left .6s ease;
+}
+.btn-gold:hover::after, .btn-dark:hover::after { left: 130%; }
+
+/* ---------- Nav: gạch chân trượt từ giữa (chỉ desktop) ---------- */
+@media (min-width: 881px) {
+  .nav-list > li > a { position: relative; border-bottom-color: transparent; }
+  .nav-list > li > a::after {
+    content: "";
+    position: absolute; left: 50%; bottom: 0;
+    width: 0; height: 2px; background: var(--gold);
+    transform: translateX(-50%);
+    transition: width .28s ease;
+  }
+  .nav-list > li > a:hover::after,
+  .nav-list > li > a.active::after { width: calc(100% - 30px); }
+}
+
+/* ---------- Header: đổ bóng rõ hơn khi cuộn ---------- */
+.site-header.scrolled { box-shadow: 0 6px 24px rgba(38, 32, 25, .12); }
+
+/* ---------- Brand card: ánh sáng vàng lướt + crest xoay nhẹ ---------- */
+.brand-card { position: relative; overflow: hidden; }
+.brand-card::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(120% 90% at 50% -20%, rgba(169, 129, 47, .12), transparent 60%);
+  opacity: 0; transition: opacity .3s;
+}
+.brand-card:hover::before { opacity: 1; }
+.brand-card .crest { transition: transform .4s cubic-bezier(.16, .8, .3, 1); }
+.brand-card:hover .crest { transform: scale(1.25) rotate(8deg); }
+.brand-card .count { transition: background .25s, color .25s, border-color .25s; }
+.brand-card:hover .count { background: var(--gold); color: #fff; border-color: var(--gold); }
+
+/* ---------- USP: icon nảy nhẹ khi hover ---------- */
+.usp { transition: transform .22s, box-shadow .22s, border-color .22s; }
+.usp:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: #d3c69f; }
+.usp-icon { transition: transform .35s cubic-bezier(.34, 1.56, .64, 1); }
+.usp:hover .usp-icon { transform: translateY(-4px) scale(1.08); }
+
+/* ---------- Product card: viền vàng mảnh sáng lên ---------- */
+.product-card { position: relative; }
+.product-card::after {
+  content: "";
+  position: absolute; inset: 0; border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(169, 129, 47, 0);
+  transition: box-shadow .25s; pointer-events: none;
+}
+.product-card:hover::after { box-shadow: inset 0 0 0 1px rgba(169, 129, 47, .5); }
+
+/* ---------- CTA banner: nền ánh vàng chuyển động chậm ---------- */
+.cta-banner { position: relative; overflow: hidden; }
+.cta-banner::before {
+  content: "";
+  position: absolute; inset: -50%;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(169, 129, 47, .18) 60deg, transparent 140deg);
+  animation: ctaSpin 14s linear infinite;
+  pointer-events: none;
+}
+.cta-banner > * { position: relative; z-index: 1; }
+@keyframes ctaSpin { to { transform: rotate(360deg); } }
+
+/* ---------- Hero: khối ảnh trôi bồng bềnh nhẹ ---------- */
+.hero-photo-pair { animation: heroFloat 6s ease-in-out 1.6s infinite; }
+@keyframes heroFloat {
+  0%, 100% { transform: translateX(clamp(12px, 2.2vw, 26px)) translateY(0); }
+  50%      { transform: translateX(clamp(12px, 2.2vw, 26px)) translateY(-12px); }
+}
+/* Hero stats hiện dần so le */
+.hero-stats > div {
+  opacity: 0;
+  animation: fadeUp .7s cubic-bezier(.16, .8, .3, 1) forwards;
+}
+.hero-stats > div:nth-child(1) { animation-delay: .7s; }
+.hero-stats > div:nth-child(2) { animation-delay: .85s; }
+.hero-stats > div:nth-child(3) { animation-delay: 1s; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Nút nổi liên hệ: nhịp đập nhẹ để thu hút ---------- */
+.float-phone { animation: floatPulse 2.4s ease-in-out infinite; }
+@keyframes floatPulse {
+  0%, 100% { box-shadow: 0 6px 18px rgba(38, 32, 25, .3), 0 0 0 0 rgba(169, 129, 47, .5); }
+  50%      { box-shadow: 0 6px 18px rgba(38, 32, 25, .3), 0 0 0 12px rgba(169, 129, 47, 0); }
+}
+
+/* ---------- Modal mua hàng: bung nhẹ khi mở ---------- */
+.modal-backdrop { transition: opacity .25s; }
+.modal-backdrop.open .modal { animation: modalIn .35s cubic-bezier(.16, .8, .3, 1); }
+@keyframes modalIn { from { opacity: 0; transform: translateY(18px) scale(.96); } to { opacity: 1; transform: none; } }
+.contact-link { transition: border-color .2s, background .2s, transform .2s; }
+.contact-link:hover { transform: translateX(4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-pair, .cta-banner::before, .float-phone,
+  .hero-stats > div { animation: none !important; }
+  .hero-stats > div { opacity: 1; }
+}

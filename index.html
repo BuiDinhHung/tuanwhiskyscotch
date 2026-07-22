@@ -124,19 +124,6 @@
       '<div><strong>' + maxAge + '</strong><span>Năm tuổi cao nhất</span></div>';
   })();
 
-  /* 3 chai thật ở hero */
-  (function () {
-    var picks = ["macallan-18-year-old-sherry-oak-2023-release", "royal-salute-32-year-old-union-of-the-crowns", "dalmore-king-alexander-iii"]
-      .map(getProductBySlug).filter(Boolean);
-    document.getElementById("heroBottles").innerHTML = picks.map(function (p) {
-      return '<a href="' + productUrl(p) + '">' +
-        '<img src="' + p.image + '" alt="' + p.name + '" loading="eager">' +
-        '<div class="hb-name">' + p.name + '</div>' +
-        '<div class="hb-price">' + formatPrice(p.price) + '</div>' +
-      '</a>';
-    }).join("");
-  })();
-
   /* Brand strip */
   document.getElementById("brandStrip").innerHTML = BRANDS.map(function (b) {
     var count = PRODUCTS.filter(function (p) { return p.brand === b.name; }).length;

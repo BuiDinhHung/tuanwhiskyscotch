@@ -98,6 +98,83 @@ function renderGrid(el, list) {
     return;
   }
   el.innerHTML = list.map(productCard).join("");
+  scanReveal(el); /* thẻ vừa render cũng hiện dần khi cuộn tới */
+}
+
+/* ============================================================
+   ✨ SCROLL REVEAL — hiện dần + so le khi cuộn tới
+   ============================================================ */
+var REVEAL_SELECTOR =
+  ".section-head, .brand-card, .product-card, .usp, .cta-banner, .empty-state, " +
+  ".footer-grid > *, .detail-info > *, .catalog-toolbar";
+
+function setupReveal() {
+  if (!("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return; /* trình duyệt cũ / người dùng tắt hiệu ứng: để nguyên hiện đủ */
+  }
+  window.__twIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add("in");
+        window.__twIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  scanReveal(document);
+}
+
+/* Gắn class .reveal + độ trễ so le cho các phần tử trong 'root' rồi theo dõi */
+function scanReveal(root) {
+  var io = window.__twIO;
+  if (!io) return;
+  var nodes = (root || document).querySelectorAll(REVEAL_SELECTOR);
+  /* nhóm để so le: nhiều thẻ cùng một lưới mới cần chạy nối tiếp nhau */
+  var STAGGER_PARENTS = ["product-grid", "brand-strip", "usp-row", "footer-grid"];
+  nodes.forEach(function (node) {
+    if (node.classList.contains("reveal")) return;
+    var parent = node.parentNode;
+    var pc = parent ? (parent.className || "") : "";
+    var delay = 0;
+    if (STAGGER_PARENTS.some(function (c) { return pc.indexOf(c) !== -1; })) {
+      var idx = Array.prototype.indexOf.call(parent.children, node);
+      delay = Math.min(idx, 6) * 80;
+    }
+    node.style.setProperty("--d", delay + "ms");
+    node.classList.add("reveal");
+    io.observe(node);
+  });
+}
+
+/* ============================================================
+   ✨ ĐẾM SỐ Ở HERO — số liệu chạy từ 0 lên khi tải trang
+   ============================================================ */
+function animateCounts() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll(".hero-stats strong").forEach(function (el) {
+    var target = parseInt(el.textContent.replace(/\D/g, ""), 10);
+    if (!target || target > 9999) return;
+    var start = null, dur = 1200;
+    function step(ts) {
+      if (start == null) start = ts;
+      var t = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - t, 3); /* easeOutCubic */
+      el.textContent = Math.round(eased * target);
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+/* ============================================================
+   ✨ HEADER — đổ bóng rõ hơn khi cuộn xuống
+   ============================================================ */
+function setupHeaderShadow() {
+  var header = document.getElementById("siteHeader");
+  if (!header) return;
+  function onScroll() { header.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 }
 
 /* ============================================================
@@ -320,4 +397,8 @@ function initPage(active) {
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeBuyModal();
   });
+  setupReveal();
+  setupHeaderShadow();
+  /* chờ script từng trang bơm nội dung động (hero stats, grid...) rồi mới chạy */
+  setTimeout(function () { scanReveal(document); animateCounts(); }, 60);
 }
