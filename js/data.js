@@ -43,12 +43,19 @@ const BRANDS = [
   { name: "Dalmore",      slug: "dalmore",      img: "images/products/dalmore-king-alexander-iii.jpg",                  tagline: "Single Malt Highland sang trọng với biểu tượng đầu hươu 12 gạc." },
   { name: "Balvenie",     slug: "balvenie",     img: "images/products/balvenie-12-year-old-doublewood.jpg",             tagline: "Thủ công truyền thống — tự trồng lúa mạch, tự đóng thùng, tự ủ rượu." },
   { name: "Chivas Royal", slug: "chivas-royal", img: "images/products/chivas-regal-25-year-old-blended-scotch-whisky.jpg", tagline: "Blended Scotch danh giá, hài hoà và sang trọng — lựa chọn cho những dịp trang trọng nhất." },
-  { name: "Hibiki",       slug: "hibiki",       img: "images/products/hibiki-japanese-harmony.jpg",                     tagline: "Blended whisky Nhật Bản tinh tế — hoà quyện hoa, mật ong và gỗ sồi Mizunara." }
+  { name: "Hibiki",       slug: "hibiki",       img: "images/products/Hibiki-Blossom-2026.webp",                        tagline: "Blended whisky Nhật Bản tinh tế — hoà quyện hoa, mật ong và gỗ sồi Mizunara." }
 ];
 
 const PRODUCTS = [
 
   /* ---------------- MACALLAN ---------------- */
+  {
+    id: 349, name: "Macallan 10 Year Old - Fine Oak", brand: "Macallan", category: "macallan",
+    type: "Single Malt", age: 10, price: null,
+    image: "images/products/macallan-fine-oak-10-transparent-v2.png",
+    description: "Macallan Fine Oak 10 năm — Single Malt ủ kết hợp thùng Bourbon và Sherry Oak, cân bằng tinh tế giữa vị ngọt vani, cam quýt và gỗ sồi. Phiên bản Fine Oak đã ngừng sản xuất, ngày càng được nhà sưu tầm săn tìm. Liên hệ Tuấn Whisky để được báo giá và tư vấn tình trạng hộp/chai.",
+    abv: 40, volume: "70cl", slug: "macallan-10-year-old-fine-oak", buyLink: "contact", featured: true
+  },
   {
     id: 1, name: "Macallan 10 Year Old - Sherry Oak", brand: "Macallan", category: "macallan",
     type: "Single Malt", age: 10, price: 299.9,
