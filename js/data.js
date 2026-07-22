@@ -33,14 +33,17 @@ const SITE = {
   whatsappUrl: "https://wa.me/447577888999"
 };
 
+/* img: ảnh chai đại diện hiện ở trang chủ (thẻ thương hiệu). Muốn đổi chai
+   đại diện, chỉ cần sửa đường dẫn ảnh ở đây. Nếu ảnh lỗi/chưa có, site tự vẽ
+   chai minh hoạ theo màu thương hiệu. */
 const BRANDS = [
-  { name: "Macallan",     slug: "macallan",     tagline: "Đỉnh cao Single Malt vùng Speyside — ủ thùng Sherry Oak trứ danh." },
-  { name: "Royal Salute", slug: "royal-salute", tagline: "Blended Scotch hoàng gia, tối thiểu 21 năm tuổi, đựng trong bình sứ thủ công." },
-  { name: "Glenfiddich",  slug: "glenfiddich",  tagline: "Nhà chưng cất gia đình lâu đời nhất Scotland, biểu tượng hươu sừng." },
-  { name: "Dalmore",      slug: "dalmore",      tagline: "Single Malt Highland sang trọng với biểu tượng đầu hươu 12 gạc." },
-  { name: "Balvenie",     slug: "balvenie",     tagline: "Thủ công truyền thống — tự trồng lúa mạch, tự đóng thùng, tự ủ rượu." },
-  { name: "Chivas Royal", slug: "chivas-royal", tagline: "Blended Scotch danh giá, hài hoà và sang trọng — lựa chọn cho những dịp trang trọng nhất." },
-  { name: "Hibiki",       slug: "hibiki",       tagline: "Blended whisky Nhật Bản tinh tế — hoà quyện hoa, mật ong và gỗ sồi Mizunara." }
+  { name: "Macallan",     slug: "macallan",     img: "images/products/macallan-18-year-old-sherry-oak-1993.jpg",        tagline: "Đỉnh cao Single Malt vùng Speyside — ủ thùng Sherry Oak trứ danh." },
+  { name: "Royal Salute", slug: "royal-salute", img: "images/products/royal-salute-21-year-old-signature-blend.jpg",     tagline: "Blended Scotch hoàng gia, tối thiểu 21 năm tuổi, đựng trong bình sứ thủ công." },
+  { name: "Glenfiddich",  slug: "glenfiddich",  img: "images/products/glenfiddich-18-year-old.jpg",                     tagline: "Nhà chưng cất gia đình lâu đời nhất Scotland, biểu tượng hươu sừng." },
+  { name: "Dalmore",      slug: "dalmore",      img: "images/products/dalmore-king-alexander-iii.jpg",                  tagline: "Single Malt Highland sang trọng với biểu tượng đầu hươu 12 gạc." },
+  { name: "Balvenie",     slug: "balvenie",     img: "images/products/balvenie-12-year-old-doublewood.jpg",             tagline: "Thủ công truyền thống — tự trồng lúa mạch, tự đóng thùng, tự ủ rượu." },
+  { name: "Chivas Royal", slug: "chivas-royal", img: "images/products/chivas-regal-25-year-old-blended-scotch-whisky.jpg", tagline: "Blended Scotch danh giá, hài hoà và sang trọng — lựa chọn cho những dịp trang trọng nhất." },
+  { name: "Hibiki",       slug: "hibiki",       img: "images/products/hibiki-japanese-harmony.jpg",                     tagline: "Blended whisky Nhật Bản tinh tế — hoà quyện hoa, mật ong và gỗ sồi Mizunara." }
 ];
 
 const PRODUCTS = [

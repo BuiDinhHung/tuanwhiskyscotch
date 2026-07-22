@@ -69,6 +69,21 @@ function mediaHtml(p, idSuffix) {
          'onerror="this.outerHTML = svgBottle(getProductBySlug(\'' + p.slug + '\'), \'' + (idSuffix || "c") + '\')">';
 }
 
+/* Chai minh hoạ cho một thương hiệu (khi ảnh đại diện chưa có / lỗi) */
+function brandSvg(slug) {
+  var b = BRANDS.find(function (x) { return x.slug === slug; }) || {};
+  var pseudo = { brand: b.name || "", slug: slug, name: b.name || "",
+                 age: null, volume: "70cl", type: "Whisky", abv: null };
+  return svgBottle(pseudo, "brand");
+}
+
+/* Ảnh chai đại diện cho thẻ thương hiệu ở trang chủ */
+function brandMedia(b) {
+  var src = b.img || "";
+  return '<img src="' + src + '" alt="Rượu ' + b.name + '" loading="lazy" ' +
+         'onerror="this.outerHTML = brandSvg(\'' + b.slug + '\')">';
+}
+
 /* ---------- product card ---------- */
 function productCard(p) {
   var ageBadge = p.age ? '<span class="badge-age">' + p.age + ' năm</span>' : "";

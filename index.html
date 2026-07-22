@@ -128,7 +128,7 @@
   document.getElementById("brandStrip").innerHTML = BRANDS.map(function (b) {
     var count = PRODUCTS.filter(function (p) { return p.brand === b.name; }).length;
     return '<a class="brand-card" href="' + b.slug + '.html">' +
-      '<div class="crest">❦</div>' +
+      '<div class="brand-photo">' + brandMedia(b) + '</div>' +
       '<h3>' + b.name + '</h3>' +
       '<p>' + b.tagline + '</p>' +
       '<span class="count">' + count + ' sản phẩm</span>' +

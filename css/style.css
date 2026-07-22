@@ -281,6 +281,19 @@ h1, h2, h3, h4, .logo-text strong { font-family: var(--font-serif); font-weight:
   transition: transform .22s, box-shadow .22s, border-color .22s;
 }
 .brand-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: #d3c69f; }
+.brand-card .brand-photo {
+  height: 168px; margin-bottom: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.brand-card .brand-photo img,
+.brand-card .brand-photo svg {
+  height: 100%; width: auto; max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 14px rgba(38, 32, 25, .16));
+  transition: transform .4s cubic-bezier(.16, .8, .3, 1);
+}
+.brand-card:hover .brand-photo img,
+.brand-card:hover .brand-photo svg { transform: translateY(-4px) scale(1.06); }
 .brand-card .crest { font-size: 26px; color: var(--gold); margin-bottom: 8px; }
 .brand-card h3 { font-size: 19px; margin-bottom: 6px; }
 .brand-card p { font-size: 13px; color: var(--muted); line-height: 1.5; min-height: 60px; }
